@@ -1,9 +1,37 @@
+.btn_apperance{
+    font-size: 14px; padding: 5px 0; color: #000;
+    padding-right: 1%; 
+    border-style: solid; border-width: 1px; 
+    padding-left: 25px; /* button image background 사이즈따라 px 유동조절, 이미지 size : 18px~20px*/
+}
 @media screen and (min-width: 1024px){
     body{
         background-color: rgb(211, 211, 211);
     }
+    body > div ol:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    body > div .btn_sort > *,
+    body > div .btn_cd > *{
+        background-repeat: no-repeat;
+        background-position: left 5px center;
+    }
+    body > div .btn_sort > *{
+        float: left; width: 95px;
+    }
+    body > div > .btn_sort > .btn_asc{
+        background-image: url('../images/'); /*TO DO -> material-icons class type 사용해서 이미지 씌워보기, active box-shadow event.;*/
+        background-color: ;
+    }
+    body > div > .btn_sort > .btn_desc{
+        background-image: url('../images/');
+        background-color: ;
+    }
+    body > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
     body > div{
-        width: 70%; margin: 0 auto; margin-top: 5%;
+        width: 70%; margin: 0 auto; padding-top: 50px; margin-top: 50px;
         text-align: center;
     }
     body > div ul:after{
@@ -57,4 +85,25 @@
     body > div ul:not(:first-of-type) li:hover{
         color: #df3838; font-weight: 700;
     }
+    body > div > .btn_cd{
+        display: flex;
+        flex-direction: row; flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    body > div > .btn_cd > *{
+       display: block; width: 65px;
+    }
+    body > div > .btn_cd > .btn_create{
+        background-image: url('../images/baseline_create_black_18dp.png');
+        background-color: #df3838;
+    }
+    body > div > .btn_cd > .btn_delete{
+        background-image: url('../images/baseline_delete_black_18dp.png');
+        background-color: #fff;
+    }
+    body > div > .btn_sort > *:not(:first-of-type),
+    body > div > .btn_cd > *:not(:first-of-type){
+        margin-left: 0.5%;
+    }
+
 }
