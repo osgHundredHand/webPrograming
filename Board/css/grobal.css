@@ -17,7 +17,7 @@
         background-position: left 5px center;
     }
     body > div .btn_sort > *{
-        float: left; width: 95px;
+        float: left; width: 100px;
     }
     body > div > .btn_sort > .btn_asc{
         background-image: url('../images/'); /*TO DO -> material-icons class type 사용해서 이미지 씌워보기, active box-shadow event.;*/
@@ -91,7 +91,7 @@
         justify-content: flex-end;
     }
     body > div > .btn_cd > *{
-       display: block; width: 65px;
+       display: block; width: 70px;
     }
     body > div > .btn_cd > .btn_create{
         background-image: url('../images/baseline_create_black_18dp.png');
