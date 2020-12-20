@@ -3,6 +3,10 @@
     padding-right: 1%; 
     border-style: solid; border-width: 1px; 
     padding-left: 25px; /* button image background 사이즈따라 px 유동조절, 이미지 size : 18px~20px*/
+    cursor: pointer;
+    transition-duration: 0.75s, 1.5s, 1.5s;
+    transition-delay: 0s, 0.75s, 0.75s;
+    transition-property: transform, box-shadow, border-color;
 }
 @media screen and (min-width: 1024px){
     body{
@@ -15,17 +19,25 @@
     body > div .btn_cd > *{
         background-repeat: no-repeat;
         background-position: left 5px center;
+        position: relative;
     }
     body > div .btn_sort > *{
         float: left; width: 100px;
     }
-    body > div > .btn_sort > .btn_asc{
-        background-image: url('../images/'); /*TO DO -> material-icons class type 사용해서 이미지 씌워보기, active box-shadow event.;*/
-        background-color: ;
+    .btn_sort .material-icons{
+        font-size: 18px; position: absolute;
+        left: 5px; top: 18%;
     }
-    body > div > .btn_sort > .btn_desc{
-        background-image: url('../images/');
-        background-color: ;
+    .btn_sort .btn_asc .material-icons{
+        transform: rotateX(180deg);
+    }
+    body > div > .btn_sort > .btn_asc,
+    body > div > .btn_cd > .btn_create{
+        background-color: #df3838;
+    }
+    body > div > .btn_sort > .btn_desc,
+    body > div > .btn_cd > .btn_delete{
+        background-color: #fff;
     }
     body > div:after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -54,6 +66,7 @@
     }
     body > div ul:not(:first-of-type) li{
         padding: 18px 0px; font-size: 14px;
+        cursor: pointer;
     }
     body > div ul:not(:first-of-type):nth-of-type(odd) li{
         background-color: #efefef;
@@ -95,15 +108,25 @@
     }
     body > div > .btn_cd > .btn_create{
         background-image: url('../images/baseline_create_black_18dp.png');
-        background-color: #df3838;
     }
     body > div > .btn_cd > .btn_delete{
         background-image: url('../images/baseline_delete_black_18dp.png');
-        background-color: #fff;
     }
     body > div > .btn_sort > *:not(:first-of-type),
     body > div > .btn_cd > *:not(:first-of-type){
         margin-left: 0.5%;
     }
-
+    .btn_apperance.btn_asc:hover,
+    .btn_apperance.btn_create:hover{
+        border-color: #df3838;
+        box-shadow: 0 5px 20px #df3838;
+    }
+    .btn_apperance.btn_desc:hover,
+    .btn_apperance.btn_delete:hover{
+        border-color: #fff;
+        box-shadow: 0 5px 20px #afafaf;
+    }
+    .btn_apperance[class*='btn']:hover{
+        transform: scale(1.05) translate3d(2px, 2px, 20px);
+    }
 }
