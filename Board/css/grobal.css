@@ -157,16 +157,15 @@
         flex-wrap: wrap;
         justify-content: center;
         position: absolute;
-        width: 80%; left: 10%; top: -4px;
-        text-align: center;  
+        width: 80%; left: 10%; top: -4px;  
     }
     body > .pager > ul li{
-        display: block;
+        display: block; width: 10%; 
     }
     body > .pager > ul li a{
         display: block; text-decoration: none;
-        font-size: 14px; color: black; width: 16px; text-align: center;
-        padding: 8px 10px; 
+        font-size: 14px; color: black; text-align: center;
+        padding: 8px 0; box-sizing: border-box; 
         border-style: solid;
         border-color: #afafaf;
         background-color: #efefef;
