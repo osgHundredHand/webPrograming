@@ -8,6 +8,12 @@
     transition-delay: 0s, 0.75s, 0.75s;
     transition-property: transform, box-shadow, border-color;
 }
+.global_timer{
+    font-size: 16px; padding: 10px 1%; color: #000;
+    text-align: center; border: 1px solid #fff; background-color: #fff;
+    width: 100px; border-radius: 5px;
+    position: absolute; left: 47%; top: 55px;
+}
 @media screen and (min-width: 1024px){
     body{
         background-color: rgb(211, 211, 211);
