@@ -12,8 +12,8 @@
     font-size: 16px; padding: 10px 1%; color: #000;
     text-align: center; border: 1px solid #fff; background-color: #fff;
     width: 100px; border-radius: 5px;
-    position: absolute; left: 47%; top: 55px;
 }
+
 @media screen and (min-width: 1024px){
     body{
         background-color: rgb(211, 211, 211);
@@ -188,6 +188,9 @@
     }
     body > .pager > ul li:active a{
         box-shadow: 0 5px 20px #afafaf;
+    }
+    body > .global_timer{
+        position: absolute; left: 47%; top: 55px;
     }
 
     
