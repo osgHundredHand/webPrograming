@@ -18,16 +18,16 @@
     body{
         background-color: rgb(211, 211, 211);
     }
-    body  > div:first-of-type ol:after{
+    body > .board ol:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    body  > div:first-of-type .btn_sort > *,
-    body  > div:first-of-type .btn_cd > *{
+    body > .board .btn_sort > *,
+    body > .board .btn_cd > *{
         background-repeat: no-repeat;
         background-position: left 5px center;
         position: relative;
     }
-    body  > div:first-of-type .btn_sort > *{
+    body > .board .btn_sort > *{
         float: left; width: 100px;
     }
     .btn_sort .material-icons{
@@ -37,89 +37,89 @@
     .btn_sort .btn_asc .material-icons{
         transform: rotateX(180deg);
     }
-    body  > div:first-of-type > .btn_sort > .btn_asc,
-    body  > div:first-of-type > .btn_cd > .btn_create{
+    body > .board > .btn_sort > .btn_asc,
+    body > .board > .btn_cd > .btn_create{
         background-color: #df3838;
     }
-    body  > div:first-of-type > .btn_sort > .btn_desc,
-    body  > div:first-of-type > .btn_cd > .btn_delete{
+    body > .board > .btn_sort > .btn_desc,
+    body > .board > .btn_cd > .btn_delete{
         background-color: #fff;
     }
-    body  > div:first-of-type:after{
+    body > .board:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    body  > div:first-of-type{
+    body > .board{
         width: 70%; margin: 0 auto; padding-top: 50px; margin-top: 50px;
         text-align: center;
     }
-    body  > div:first-of-type ul:after{
+    body > .board ul:after{
         content: ''; visibility: hidden; display: block; clear: both;
     }
-    body  > div:first-of-type ul li{
+    body > .board ul li{
         list-style: none; display: block;
         float: left; box-sizing: border-box;
     }
-    body  > div:first-of-type ul:first-of-type li:first-of-type{border-radius: 10px 0 0 0;}
-    body  > div:first-of-type ul:first-of-type li:last-of-type{border-radius: 0 10px 0 0;}
-    body  > div:first-of-type ul:last-of-type  li:first-of-type{border-radius: 0 0 0 10px;}
-    body  > div:first-of-type ul:last-of-type  li:last-of-type{border-radius: 0 0 10px 0;}
+    body > .board ul:first-of-type li:first-of-type{border-radius: 10px 0 0 0;}
+    body > .board ul:first-of-type li:last-of-type{border-radius: 0 10px 0 0;}
+    body > .board ul:last-of-type  li:first-of-type{border-radius: 0 0 0 10px;}
+    body > .board ul:last-of-type  li:last-of-type{border-radius: 0 0 10px 0;}
 
-    body  > div:first-of-type ul:first-of-type li{
+    body > .board ul:first-of-type li{
         text-transform: capitalize;
         padding: 20px 0px;
         background-color: #60ffdd;
         font-size: 16px; 
     }
-    body  > div:first-of-type ul:not(:first-of-type) li{
+    body > .board ul:not(:first-of-type) li{
         padding: 18px 0px; font-size: 14px;
         cursor: pointer;
     }
-    body  > div:first-of-type ul:not(:first-of-type):nth-of-type(odd) li{
+    body > .board ul:not(:first-of-type):nth-of-type(odd) li{
         background-color: #efefef;
     }
-    body  > div:first-of-type ul:not(:first-of-type):nth-of-type(even) li{
+    body > .board ul:not(:first-of-type):nth-of-type(even) li{
         background-color: white;
     }
-    body  > div:first-of-type ul li:first-of-type{
+    body > .board ul li:first-of-type{
         width: 5%;
     }
-    body  > div:first-of-type ul li:nth-of-type(2){
+    body > .board ul li:nth-of-type(2){
         width: 65%; padding-left : 20%; padding-right: 20%;
     }
-    body  > div:first-of-type ul li:nth-of-type(3){
+    body > .board ul li:nth-of-type(3){
         width: 15%; padding-left : 5%; padding-right: 5%; 
     }
-    body  > div:first-of-type ul li:nth-of-type(2),
-    body  > div:first-of-type ul li:nth-of-type(3){
+    body > .board ul li:nth-of-type(2),
+    body > .board ul li:nth-of-type(3){
         white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
     }
-    body  > div:first-of-type ul li:last-of-type{
+    body > .board ul li:last-of-type{
         width: 15%;
     }
 
-    body  > div:first-of-type ul:not(:first-of-type):hover li{
+    body > .board ul:not(:first-of-type):hover li{
         background-color: #e9e9e9;
     }
 
-    body  > div:first-of-type ul:not(:first-of-type) li:hover{
+    body > .board ul:not(:first-of-type) li:hover{
         color: #df3838; font-weight: 700;
     }
-    body  > div:first-of-type > .btn_cd{
+    body > .board > .btn_cd{
         display: flex;
         flex-direction: row; flex-wrap: wrap;
         justify-content: flex-end;
     }
-    body  > div:first-of-type > .btn_cd > *{
+    body > .board > .btn_cd > *{
        display: block; width: 70px;
     }
-    body  > div:first-of-type > .btn_cd > .btn_create{
+    body > .board > .btn_cd > .btn_create{
         background-image: url('../images/baseline_create_black_18dp.png');
     }
-    body  > div:first-of-type > .btn_cd > .btn_delete{
+    body > .board > .btn_cd > .btn_delete{
         background-image: url('../images/baseline_delete_black_18dp.png');
     }
-    body  > div:first-of-type > .btn_sort > *:not(:first-of-type),
-    body  > div:first-of-type > .btn_cd > *:not(:first-of-type){
+    body > .board > .btn_sort > *:not(:first-of-type),
+    body > .board > .btn_cd > *:not(:first-of-type){
         margin-left: 0.5%;
     }
     .btn_apperance.btn_asc:hover,
@@ -139,6 +139,7 @@
     body > .pager{
         width: 25%; margin: 0 auto;
         position: relative;
+        margin-bottom: 30px;
     }
     body > .pager::after{
         content: ''; display: block; visibility: hidden; clear: both;

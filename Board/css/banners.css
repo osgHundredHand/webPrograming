@@ -1,0 +1,38 @@
+body > .banner{
+    width: 52.08%; margin: 0 auto;
+    position: relative;
+}
+body > .banner > a{
+    width: 2%; position: absolute;
+    top: 80px; font-size: 14px;
+    z-index: 10;
+}
+body > .banner > a:first-of-type{
+    text-align: right; left: 1%;
+}
+body > .banner > a:last-of-type{
+    text-align: left; right: 1%;
+}
+body > .banner ol{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body > .banner ol li{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+body > .banner ol li a img{
+    max-width: 1000px;
+    z-index: 1;
+}
+/* 
+body > .banner ol li.active{
+    display: block;
+}
+버튼 슬라이더 예정
+*/

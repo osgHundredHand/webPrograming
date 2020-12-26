@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="css/import.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src='js/time.js'></script>
+    <script src="js/banner.js"></script>
 </head>
 <body>
-    <div>
+    <div class='global_timer'>
+        <time datetime="YYYY-MM-DDThh:mm" id='realTimeTimer'>시계</time>
+    </div>
+    <div class='board'>
         <ol class='btn_sort'>
             <button class='btn_apperance btn_asc'><span class='material-icons'>sort</span>오름차순</button>
             <button class='btn_apperance btn_desc'><span class='material-icons'>sort</span>내림차순</button>
@@ -93,8 +97,35 @@
             <li><a href="#">10</a></li>
         </ul>
     </div>
-    <div class='global_timer'>
-        <time datetime="YYYY-MM-DDThh:mm" id='realTimeTimer'>시계</time>
+    <div class="banner">
+        <a href="#ban1" id='main_ban_before'>
+            <span class="material-icons">navigate_before</span>
+        </a>
+        <a href="#ban1" id='main_ban_next'>
+            <span class="material-icons">navigate_next</span>
+        </a>
+        <ol>
+            <li id='ban1'>
+                <a href="http://www.naver.com">
+                    <img src="http://via.placeholder.com/1000x200/FF0000?text=Naver" alt="ban1">
+                </a>
+            </li>
+            <li id='ban2'>
+                <a href="http://www.daum.net">
+                    <img src="http://via.placeholder.com/1000x200/0000FF?text=Daum" alt="ban2">
+                </a>
+            </li>
+            <li id='ban3'>
+                <a href="http://www.msn.com">
+                    <img src="http://via.placeholder.com/1000x200/FFFFFF?text=Msn" alt="ban3">
+                </a>
+            </li>
+            <li id='ban4'>
+                <a href="http://www.yahoo.co.jp">
+                    <img src="http://via.placeholder.com/1000x200/008000?text=Yahoo" alt="ban4">
+                </a>        
+            </li>
+        </ol>
     </div>
 </body>
 </html>
