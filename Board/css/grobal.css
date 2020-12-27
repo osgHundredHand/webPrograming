@@ -18,7 +18,7 @@
     body{
         background-color: rgb(211, 211, 211);
     }
-    body > .board ol:after{
+    body > .board > [class*='btn']:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     body > .board .btn_sort > *,
