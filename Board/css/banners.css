@@ -1,9 +1,13 @@
 body > .banner{
-    width: 52.08%; margin: 0 auto;
+    width: 52.08%; margin: 0 auto; /* window size(기본 1920px)에 대한 banner img size(기본 1000px)에 대한 per */
     position: relative;
+}                                  /*    수정 시 둘 다 수정!!                                                */
+body > .banner ol li a img{
+    max-width: 1000px;             /* window size(기본 1920px)에 대한 banner img size(기본 1000px)에 대한 px */
+    z-index: 1;
 }
 body > .banner > a{
-    width: 2%; position: absolute;
+    width: 2%; position: absolute; 
     top: 80px; font-size: 14px;
     z-index: 10;
 }
@@ -20,16 +24,14 @@ body > .banner ol{
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    justify-content: flex-start;
 }
 body > .banner ol li{
     width: 100%;
     text-align: center;
     display: block;
 }
-body > .banner ol li a img{
-    max-width: 1000px;
-    z-index: 1;
-}
+
 /* 
 body > .banner ol li.active{
     display: block;
