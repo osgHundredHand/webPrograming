@@ -11,7 +11,7 @@
 .global_timer{
     font-size: 16px; padding: 10px 1%; color: #000;
     text-align: center; border: 1px solid #fff; background-color: #fff;
-    width: 100px; border-radius: 5px;
+    width: 300px; border-radius: 5px;
 }
 
 @media screen and (min-width: 1024px){
@@ -191,7 +191,7 @@
         box-shadow: 0 5px 20px #afafaf;
     }
     body > .global_timer{
-        position: absolute; left: 47%; top: 55px;
+        position: absolute; left: 40%; top: 55px;
     }
 
     

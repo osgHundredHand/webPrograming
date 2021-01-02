@@ -9,8 +9,8 @@ function bannerSelectorCmd(){
 }
 function bannerSelectorInit(){
     numbefore = null;
-    before = $('#main_ban_before');
-    next = $('#main_ban_next')
+    before = $('#main_ban_before'); // before a href id
+    next = $('#main_ban_next')      // next a href id
 }
 function bannerSelectorExt(){
     $(before).click(function(){
